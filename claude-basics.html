@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Basics | AI Tools for MH Leaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Tools for Mental Health Leaders</h1>
+        <p class="tagline">Simple guides to help you build with AI</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="claude-basics.html" class="active">Claude Basics</a>
+        <a href="api-keys.html">API Keys</a>
+        <a href="knowledge-base.html">Knowledge Base</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Getting Started with Claude</h2>
+
+            <section class="step">
+                <h3>What is Claude?</h3>
+                <p>Claude is an AI assistant made by Anthropic. Think of it like ChatGPT's thoughtful cousin — it's particularly good at nuanced conversations, writing, and helping you build things.</p>
+                <p>There are a few ways to use Claude:</p>
+                <ul>
+                    <li><strong>Claude.ai</strong> — The website where you chat with Claude (like ChatGPT's interface)</li>
+                    <li><strong>Claude Code</strong> — A tool that lets Claude work directly on your computer, reading and writing files</li>
+                    <li><strong>The API</strong> — For building Claude into your own applications</li>
+                </ul>
+            </section>
+
+            <section class="step">
+                <h3>Step 1: Create an Anthropic Account</h3>
+                <ol>
+                    <li>Go to <a href="https://claude.ai" target="_blank">claude.ai</a></li>
+                    <li>Click "Sign up" and create your account</li>
+                    <li>Verify your email</li>
+                </ol>
+                <p>That's it — you can now chat with Claude on the web.</p>
+            </section>
+
+            <section class="step">
+                <h3>Step 2: Install Claude Code (Optional but Powerful)</h3>
+                <p>Claude Code lets Claude work on files on your computer. It's like having a collaborator who can actually edit your documents and projects.</p>
+
+                <div class="warning">
+                    <strong>First, you need Node.js installed.</strong> If you've never done this:
+                    <ol>
+                        <li>Go to <a href="https://nodejs.org" target="_blank">nodejs.org</a></li>
+                        <li>Download the "LTS" version (the button on the left)</li>
+                        <li>Run the installer, click through the steps</li>
+                    </ol>
+                </div>
+
+                <p>Now install Claude Code:</p>
+                <ol>
+                    <li>Open your Terminal (on Mac: search "Terminal" in Spotlight)</li>
+                    <li>Copy and paste this command, then press Enter:</li>
+                </ol>
+                <pre><code>npm install -g @anthropic-ai/claude-code</code></pre>
+
+                <p>Wait for it to finish. You'll see some text scroll by — that's normal.</p>
+            </section>
+
+            <section class="step">
+                <h3>Step 3: Start Claude Code</h3>
+                <p>In your Terminal, type:</p>
+                <pre><code>claude</code></pre>
+                <p>The first time, it will ask you to log in with your Anthropic account. Follow the prompts.</p>
+                <p>Once logged in, you can start talking to Claude right in your terminal. Try typing:</p>
+                <pre><code>What can you help me with?</code></pre>
+            </section>
+
+            <section class="step">
+                <h3>Step 4: Your First Real Task</h3>
+                <p>Let's have Claude create something. In the terminal where Claude is running, try:</p>
+                <pre><code>Create a simple HTML page that says "Hello, I'm building with AI!" and save it to my Desktop</code></pre>
+                <p>Claude will create the file for you. Open it in your browser to see your creation.</p>
+            </section>
+
+            <section class="step">
+                <h3>Key Things to Know</h3>
+                <ul>
+                    <li><strong>Claude can see your files</strong> — When you're in a folder and run Claude Code, it can read and edit files there</li>
+                    <li><strong>Be specific</strong> — The clearer your instructions, the better the results</li>
+                    <li><strong>You're in control</strong> — Claude will ask permission before making changes</li>
+                    <li><strong>It's conversational</strong> — You can say "actually, change that to..." just like talking to a person</li>
+                </ul>
+            </section>
+
+            <div class="next-step">
+                <p>Ready for the next step?</p>
+                <a href="api-keys.html" class="button">Learn About API Keys →</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Made with care for the MH + AI community</p>
+    </footer>
+</body>
+</html>

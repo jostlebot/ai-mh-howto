@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Keys Explained | AI Tools for MH Leaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Tools for Mental Health Leaders</h1>
+        <p class="tagline">Simple guides to help you build with AI</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="claude-basics.html">Claude Basics</a>
+        <a href="api-keys.html" class="active">API Keys</a>
+        <a href="knowledge-base.html">Knowledge Base</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Understanding API Keys</h2>
+
+            <section class="step">
+                <h3>What is an API Key?</h3>
+                <p>Think of an API key like a <strong>special password</strong> that lets your projects talk to AI services.</p>
+                <p>When you use Claude.ai in your browser, you're logged in with your email. But when you want to build something that uses Claude — like a custom app or automation — you need an API key to prove it's really you.</p>
+
+                <div class="analogy">
+                    <strong>Analogy:</strong> Your email login is like walking into a store and showing your face. An API key is like giving a trusted assistant your credit card to shop on your behalf.
+                </div>
+            </section>
+
+            <section class="step">
+                <h3>Step 1: Get Your Anthropic API Key</h3>
+                <ol>
+                    <li>Go to <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></li>
+                    <li>Log in (or create an account if needed)</li>
+                    <li>Click on "API Keys" in the left sidebar</li>
+                    <li>Click "Create Key"</li>
+                    <li>Give it a name like "my-first-key"</li>
+                    <li><strong>Copy the key immediately</strong> — you won't be able to see it again</li>
+                </ol>
+
+                <div class="warning">
+                    <strong>Important:</strong> Your API key will look something like:<br>
+                    <code>sk-ant-api03-xxxxxx...</code><br>
+                    Keep this secret. Anyone with this key can use your account and you'll be charged.
+                </div>
+            </section>
+
+            <section class="step">
+                <h3>Step 2: Store Your Key Safely</h3>
+                <p>Never put API keys directly in code that you share. Here's the safe way:</p>
+
+                <h4>On Mac:</h4>
+                <ol>
+                    <li>Open Terminal</li>
+                    <li>Type this command (replace YOUR_KEY with your actual key):</li>
+                </ol>
+                <pre><code>echo 'export ANTHROPIC_API_KEY="YOUR_KEY"' >> ~/.zshrc</code></pre>
+                <ol start="3">
+                    <li>Then run:</li>
+                </ol>
+                <pre><code>source ~/.zshrc</code></pre>
+
+                <p>Now your key is stored securely and available whenever you need it.</p>
+
+                <h4>What this does:</h4>
+                <p>It saves your key as an "environment variable" — a piece of information your computer remembers but doesn't show in your files.</p>
+            </section>
+
+            <section class="step">
+                <h3>Step 3: Verify It Works</h3>
+                <p>Open a new Terminal window and type:</p>
+                <pre><code>echo $ANTHROPIC_API_KEY</code></pre>
+                <p>You should see your key printed out. If you see nothing, try closing Terminal and opening it again.</p>
+            </section>
+
+            <section class="step">
+                <h3>Understanding API Costs</h3>
+                <p>When you use Claude through the API, you pay for what you use. It's measured in "tokens" — roughly:</p>
+                <ul>
+                    <li>1 token ≈ 4 characters of text</li>
+                    <li>A typical conversation might use 1,000-5,000 tokens</li>
+                    <li>Current pricing is fractions of a penny per 1,000 tokens</li>
+                </ul>
+                <p>For learning and small projects, expect to spend $5-20/month at most. You can set spending limits in your Anthropic console.</p>
+            </section>
+
+            <section class="step">
+                <h3>Safety Rules</h3>
+                <div class="rules">
+                    <p><strong>DO:</strong></p>
+                    <ul>
+                        <li>Store keys in environment variables</li>
+                        <li>Set spending limits on your account</li>
+                        <li>Create separate keys for different projects</li>
+                        <li>Delete keys you're no longer using</li>
+                    </ul>
+                    <p><strong>DON'T:</strong></p>
+                    <ul>
+                        <li>Put keys in files you share publicly</li>
+                        <li>Share keys with others (they should get their own)</li>
+                        <li>Commit keys to GitHub</li>
+                        <li>Post keys in screenshots or videos</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="next-step">
+                <p>Now that you understand API keys, let's build something real:</p>
+                <a href="knowledge-base.html" class="button">Build Your Knowledge Base →</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Made with care for the MH + AI community</p>
+    </footer>
+</body>
+</html>

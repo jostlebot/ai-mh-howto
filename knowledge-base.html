@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Your Knowledge Base | AI Tools for MH Leaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Tools for Mental Health Leaders</h1>
+        <p class="tagline">Simple guides to help you build with AI</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="claude-basics.html">Claude Basics</a>
+        <a href="api-keys.html">API Keys</a>
+        <a href="knowledge-base.html" class="active">Knowledge Base</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Building Your Knowledge Base</h2>
+
+            <section class="step">
+                <h3>What is a Knowledge Base?</h3>
+                <p>A knowledge base is a <strong>collection of your expertise</strong> that AI can reference. Instead of explaining your frameworks, methodologies, and voice every time, you create a foundation that Claude already "knows."</p>
+                <p>Imagine having an assistant who has read everything you've ever written and understands how you think. That's what we're building.</p>
+            </section>
+
+            <section class="step">
+                <h3>Step 1: Create Your Project Folder</h3>
+                <p>First, let's create a dedicated space for your knowledge base.</p>
+                <ol>
+                    <li>Open Terminal</li>
+                    <li>Run these commands:</li>
+                </ol>
+                <pre><code>mkdir ~/my-knowledge-base
+cd ~/my-knowledge-base</code></pre>
+                <p>You now have a folder called "my-knowledge-base" in your home directory.</p>
+            </section>
+
+            <section class="step">
+                <h3>Step 2: Create Your CLAUDE.md File</h3>
+                <p>This special file tells Claude about you and your work. Claude Code automatically reads it.</p>
+                <p>Create the file by running Claude Code:</p>
+                <pre><code>claude</code></pre>
+                <p>Then ask Claude:</p>
+                <pre><code>Create a CLAUDE.md file that I can fill in with information about myself and my work</code></pre>
+                <p>Claude will create a template for you. Here's what to include:</p>
+
+                <div class="template">
+                    <h4>CLAUDE.md Template</h4>
+                    <pre><code># About Me
+
+## Who I Am
+[Your name, title, what you do]
+
+## My Expertise
+[Your areas of specialty in mental health]
+
+## My Frameworks
+[Therapeutic approaches you use, methodologies you've developed]
+
+## My Voice
+[How you communicate — warm? clinical? conversational?]
+
+## Common Topics I Create Content About
+[List the themes you regularly address]
+
+## Important Terms I Use
+[Any specific language or concepts unique to your work]</code></pre>
+                </div>
+            </section>
+
+            <section class="step">
+                <h3>Step 3: Add Your Content</h3>
+                <p>Now add files that represent your expertise:</p>
+                <ul>
+                    <li><strong>Past articles or blog posts</strong> (copy as .txt or .md files)</li>
+                    <li><strong>Frameworks you've developed</strong></li>
+                    <li><strong>Common Q&As</strong> you answer</li>
+                    <li><strong>Your bio in different lengths</strong></li>
+                    <li><strong>Example emails or messages</strong> that show your voice</li>
+                </ul>
+
+                <p>Create a simple folder structure:</p>
+                <pre><code>my-knowledge-base/
+├── CLAUDE.md
+├── frameworks/
+│   └── my-main-framework.md
+├── writing-samples/
+│   ├── blog-post-1.md
+│   └── newsletter-example.md
+└── about/
+    └── bio-versions.md</code></pre>
+            </section>
+
+            <section class="step">
+                <h3>Step 4: Use Your Knowledge Base</h3>
+                <p>Now when you run Claude Code from inside your knowledge-base folder, Claude will reference all of it.</p>
+                <pre><code>cd ~/my-knowledge-base
+claude</code></pre>
+                <p>Try prompts like:</p>
+                <ul>
+                    <li>"Write a LinkedIn post about [topic] in my voice"</li>
+                    <li>"Draft an email responding to this question: [paste question]"</li>
+                    <li>"Create a workshop outline based on my framework"</li>
+                </ul>
+            </section>
+
+            <section class="step">
+                <h3>Step 5: Keep It Growing</h3>
+                <p>Your knowledge base is a living thing. As you create new content:</p>
+                <ol>
+                    <li>Add new files to the appropriate folders</li>
+                    <li>Update your CLAUDE.md when your thinking evolves</li>
+                    <li>Add examples of particularly good work</li>
+                </ol>
+                <p>The more context you provide, the better Claude can assist you.</p>
+            </section>
+
+            <section class="step">
+                <h3>Pro Tips</h3>
+                <ul>
+                    <li><strong>Quality over quantity</strong> — 10 great examples beat 100 mediocre ones</li>
+                    <li><strong>Include failures</strong> — add notes about what NOT to do or say</li>
+                    <li><strong>Be specific about voice</strong> — "I never use the word 'journey'" is helpful</li>
+                    <li><strong>Update regularly</strong> — your thinking evolves; your knowledge base should too</li>
+                </ul>
+            </section>
+
+            <section class="step">
+                <h3>What's Next?</h3>
+                <p>With your knowledge base set up, you can:</p>
+                <ul>
+                    <li>Generate content in your voice instantly</li>
+                    <li>Build custom tools that understand your work</li>
+                    <li>Share your setup with collaborators</li>
+                    <li>Create client-facing tools that reflect your expertise</li>
+                </ul>
+            </section>
+
+            <div class="next-step">
+                <p>You did it! You've learned the foundations.</p>
+                <a href="index.html" class="button">← Back to Home</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Made with care for the MH + AI community</p>
+    </footer>
+</body>
+</html>
