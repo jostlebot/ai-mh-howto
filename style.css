@@ -265,6 +265,19 @@ footer {
     font-size: 0.9rem;
 }
 
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* Links */
 a {
     color: #667eea;
