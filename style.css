@@ -278,6 +278,62 @@ footer {
     text-decoration: underline;
 }
 
+/* Research Areas */
+.research-area {
+    background: #f7fafc;
+    border-left: 3px solid #48bb78;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.research-area h4 {
+    margin-top: 0;
+    color: #2d3748;
+}
+
+/* Paper List */
+.paper-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.paper-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.paper-list li:last-child {
+    border-bottom: none;
+}
+
+.paper-note {
+    display: block;
+    color: #718096;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+/* Example File Block */
+.example-file {
+    background: #1a202c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.example-file h3 {
+    color: #68d391;
+    margin-top: 0;
+    font-family: 'SF Mono', Monaco, monospace;
+}
+
+.example-file pre {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+}
+
 /* Links */
 a {
     color: #667eea;
